@@ -1,0 +1,121 @@
+header {
+    background-color: #0d3d40;
+    color: white;
+    padding: 1rem 0;
+}
+
+
+nav section {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+nav span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a,
+nav span a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    font-size: 14px;
+    background-color: #0d3d40;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 0.5rem 0;
+    width: 100%;
+    bottom: 0;
+    border-top: 3px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+footer .info,
+footer .other {
+    width: 45%;
+}
+
+footer .info p {
+    margin: 0;
+}
+
+
+footer .info p:first-child {
+    font-weight: bold;
+}
+
+footer .social-links a {
+    margin: 0 5px;
+    display: inline-block;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+footer .social-links img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+footer .social-links a:hover img {
+    transform: scale(1.2);
+}
+
+footer .other {
+    text-align: right;
+}
+
+footer .other i {
+    display: block;
+    font-style: italic;
+    color: #ddd;
+}
+
+footer .other button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer .other button:hover {
+    background-color: #0056b3;
+}
+
+footer .copyright {
+    margin: 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaa;
+}

@@ -1,0 +1,246 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../img/1099191.jpg') no-repeat center center fixed;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    padding: 20px 0;
+    background: #19b323d4;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.title h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fffffff0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.card img {
+    max-width: 10rem;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s cubic-bezier(1, -0.16, 0.58, 1);
+}
+
+.card img {
+    animation-name: moveimgup;
+    animation-duration: 0.8s;
+}
+
+.content {
+    animation-name: displaycontent;
+    animation-duration: 0.8s;
+}
+
+.card.expanded .content {
+    animation-name: movecontent;
+    animation-duration: 0.8s;
+}
+
+@keyframes displaycontent {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes movecontent {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes displaydetails {
+    from {
+        opacity: 0;
+        transform: scale(0.2) translate(-30%);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(0.95) translate(0);
+    }
+}
+
+@keyframes moveimgup {
+    from {
+        transform: translate(-50%, 60%);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes moveimgdown {
+    from {
+        transform: translate(40%, -60%);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card.expanded {
+    grid-column: span 2;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    transition: max-height 0.6s ease, max-width 0.6s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card.expanded img {
+    max-width: 100%;
+    transition: transform 0.5s cubic-bezier(1, -0.16, 0.58, 1);
+    animation-name: moveimgdown;
+    animation-duration: 0.8s;
+}
+
+.card.expanded .details {
+    display: block;
+    opacity: 1;
+
+}
+
+.details {
+    transform: scale(0.95);
+    transition: opacity 0.4s ease, transform 0.5s ease;
+    margin-top: 10px;
+    color: #555;
+    animation: displaydetails 0.8s;
+}
+
+.hidden {
+    display: none;
+}
+
+.card .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #fa7f7f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+
+.card.expanded .close {
+    opacity: 1;
+}
+
+.card .close:hover {
+    background-color: #b50606;
+}
+
+
+.card h2 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    color: #007BFF;
+}
+
+.card p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.progress-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    width: 0%;
+    background-color: #4caf50;
+    transition: width 0.5s ease;
+    background: linear-gradient(90deg, #4caf50, #8bc34a);
+    box-shadow: 0 0 10px #4caf50;
+    animation: glowing 1.5s infinite alternate;
+}
+
+@keyframes glowing {
+    from {
+        box-shadow: 0 0 10px #4caf50;
+    }
+
+    to {
+        box-shadow: 0 0 20px #8bc34a;
+    }
+}
+
+
+.progress-text {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 20px;
+    z-index: 1;
+}

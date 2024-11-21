@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+    <link rel="shortcut icon" a="" href="../img/icon.ico">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/info.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span><a>Quang Lâm Website</a></span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="CV.html" target="_blank">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="title">
+        <h1>Personal Information</h1>
+    </div>
+    <main>
+        <div class="grid">
+            <section class="card" id="personal" onclick="expandCard(this)">
+                <img src="../img/personal2.jpg" alt="Personal Information">
+                <div class="content">
+                    <h2>Introduction</h2>
+                    <p><strong>Name:</strong> Mai Van Quang Lam</p>
+                    <p><strong>Date of Birth:</strong> 12/12/2004</p>
+                    <p><strong>Hometown:</strong> Binh Thanh, Binh Son, Quang Ngai</p>
+                    <p><strong>Address:</strong> A Dua, EaTam, BMT, Dak Lak</p>
+                    <div class="details hidden">
+                        <p>I am an introvert, overthinker, and a bit OCD.</p>
+                        <p>I am responsible, dedicated, and hardworking.</p>
+                    </div>
+                </div>
+                <button class="close hidden" onclick="closeCard(event, this)">&times;</button>
+            </section>
+            <section class="card" id="family" onclick="expandCard(this)">
+                <img src="../img/familystructure.jpg" alt="Family">
+                <div class="content">
+                    <h2>Family</h2>
+                    <p>My family consists of 4 members.</p>
+                    <p>My dad, my mom, my sister, and me.</p>
+                    <div class="details hidden">
+                        <p>- My parents are both farmers and live about 80km from Buon Ma Thuot city.</p>
+                        <p>- My sister graduated from the University of Foreign Language Studies, the University of Da
+                            Nang(UFL) and works at the airport in Da Nang.</p>
+                        <p>- I am currently studying at Tay Nguyen University.</p>
+                    </div>
+                </div>
+                <button class="close hidden" onclick="closeCard(event, this)">&times;</button>
+            </section>
+            <section class="card" id="education" onclick="expandCard(this)">
+                <img src="../img/Education-1.jpg" alt="Education">
+                <div class="content">
+                    <h2>Education</h2>
+                    <p>I am studying at Tay Nguyen University, majoring in Information Technology.</p>
+                    <div class="details hidden">
+                        <p>Started: 08-2022</p>
+                        <p>Currently: 3rd year</p>
+                        <p>Expected completion: 2026</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;"></div>
+                            <span class="progress-text">75%</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="close hidden" onclick="closeCard(event, this)">&times;</button>
+            </section>
+            <section class="card" id="passion" onclick="expandCard(this)">
+                <img src="../img/passion.jpg" alt="Passion">
+                <div class="content">
+                    <h2>Passion</h2>
+                    <p>My passion is programming and learning new technologies.</p>
+                    <div class="details hidden">
+                        <p>I have been interested in software and computer applications since middle school.</p>
+                        <p>I want to create tools that serve everyday life, and develop highly entertaining games.</p>
+                        <p>The feeling of exploring and creating new things is truly fun.</p>
+                    </div>
+                </div>
+                <button class="close hidden" onclick="closeCard(event, this)">&times;</button>
+            </section>
+            <section class="card" id="hobbies" onclick="expandCard(this)">
+                <img src="../img/hobbies.png" alt="Hobbies">
+                <div class="content">
+                    <h2>Hobbies</h2>
+                    <p>These are the things I enjoy doing when I have free time.</p>
+                    <div class="details hidden">
+                        <ul>
+                            <li>
+                                <p>Anime & Manga: Watching anime and reading manga are great ways to relax and pass time
+                                    (^_^)</p>
+                            </li>
+                            <li>
+                                <p>Gaming: This is also an effective way to kill time, but whether it's fun or not is
+                                    another question ⚆ _ ⚆</p>
+                            </li>
+                            <li>
+                                <p>Listening to Music: Listening to music is great when I have free time, or even when
+                                    I'm working or studying (❁´◡`❁)</p>
+                            </li>
+                            <li>
+                                <p>Playing Guitar: I play at a basic level, mainly for fun 🎸</p>
+                            </li>
+                            <li>
+                                <p>Origami: This helps train focus and patience (˘⌣˘)</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="close hidden" onclick="closeCard(event, this)">&times;</button>
+            </section>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="info">
+                <p>Some personal information!</p>
+                <p class="social-links">
+                    <a href="#" target="_blank">
+                        <img src="https://static.xx.fbcdn.net/rsrc.php/yT/r/aGT3gskzWBf.ico?_nc_eui2=AeEYIIQ-Kmjep1NfAQPVImFKrSiY817De8atKJjzXsN7xos_Ow8tqDmAAVBL2IrprG6cBF5DK_r47yJqGTexFO3v"
+                            alt="Facebook">
+                    </a>
+                    <a href="https://zalo.me/0395804101" target="_blank">
+                        <img src="https://stc-zaloprofile.zdn.vn/favicon.ico" alt="Zalo">
+                    </a>
+                    <a href="mailto:maivanquanglam@gmail.com" target="_blank">
+                        <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Gmail">
+                    </a>
+                    <a href="https://github.com/quanglam12" target="_blank">
+                        <img src="https://github.com/fluidicon.png" alt="GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/mvql12122004/" target="_blank">
+                        <img src="https://static.licdn.com/aero-v1/sc/h/3loy7tajf3n0cho89wgg0fjre" alt="LinkedIn">
+                    </a>
+                </p>
+            </div>
+            <div class="other">
+                <i>Would you like to view the website in Vietnamese?</i>
+                <a href="../vi/Info.html"><button>Vietnamese</button></a>
+            </div>
+        </div>
+        <p class="copyright">© Mai Van Quang Lam 2024</p>
+    </footer>
+
+    <script src="../js/expand.js"></script>
+</body>
+
+</html>

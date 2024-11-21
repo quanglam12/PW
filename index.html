@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirect Example</title>
-    <script>
-        // Kiểm tra nếu URL là gốc
-        if (window.location.pathname === "/PW/") {
-            // Chuyển hướng đến trang chủ
-            window.location.href = "/PW/en/index.html";
-        }
-    </script>
+    <title>Redirect</title>
 </head>
 <body>
+    <div class="redirect-container">
+        <h1>Select page direction</h1> 
+        <button onclick="href='/vn/index.html'">Vietnamese</button> 
+        <button onclick="href='/en/index.html'">English</button>
 </body>
 </html>
